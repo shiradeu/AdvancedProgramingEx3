@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          EX3 IN PROGRESS!!
         </a>
       </header>
     </div>
