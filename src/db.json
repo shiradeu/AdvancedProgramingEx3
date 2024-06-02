@@ -1,0 +1,34 @@
+
+[{
+    "prop1": 1,
+    "prop2": "prop 2",
+    "prop3": "prop 3"
+
+}
+
+,
+{
+    "prop1": 2,
+    "prop2":"one more item",
+    "prop3": "thats all"
+
+},
+{
+    "prop1": 3,
+    "prop2":"one more item",
+    "prop3": "thats all"
+
+},
+{
+    "prop1": 4,
+    "prop2":"one more item",
+    "prop3": "thats all"
+
+},
+{
+    "prop1": 5,
+    "prop2":"last item",
+    "prop3": "thats all"
+
+}
+]

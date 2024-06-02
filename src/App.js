@@ -1,28 +1,29 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Article from './Article';
+import lst from './db.json';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-        EX3 IN PROGRESS!!
- <code>          EX3 IN PROGRESS!!
-</code>           EX3 IN PROGRESS!!
+  const [articlesList,setList] =useState(lst) 
+  const additem= () =>{
+   const item= {
+    "prop1": "added button item!",
+    "prop2":"added button item!",
+    "prop3": "added button item!"
+  }
 
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          EX3 IN PROGRESS!!
-        </a>
-      </header>
-    </div>
-  );
+  setList([...articlesList,item])
+}
+  return (
+  < div className="App">
+    <button onClick={additem}>Add</button>
+    {
+    articlesList.map((item) =>
+        <Article {...item}/>
+  )
+    }
+  </div>
+   );
 }
 
 export default App;
